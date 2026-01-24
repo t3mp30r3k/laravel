@@ -23,7 +23,7 @@
 # How To Deploy
 
 ### For first time only !
-- `git clone https://github.com/refactorian/laravel-docker.git`
+- `git clone https://github.com/t3mp30r3k/laravel.git laravel-docker`
 - `cd laravel-docker`
 - `docker compose up -d --build`
 - `docker compose exec php bash`
@@ -34,11 +34,6 @@
 
 # Notes
 
-### Laravel Versions
-- [Laravel 12.x](https://github.com/refactorian/laravel-docker/tree/main)
-- [Laravel 11.x](https://github.com/refactorian/laravel-docker/tree/laravel_11x)
-- [Laravel 10.x](https://github.com/refactorian/laravel-docker/tree/laravel_10x)
-
 ### Laravel App
 - URL: http://localhost
 
@@ -48,16 +43,16 @@
 ### phpMyAdmin
 - URL: http://localhost:8080
 - Server: `db`
-- Username: `refactorian`
-- Password: `refactorian`
-- Database: `refactorian`
+- Username: `laravel`
+- Password: `laravel`
+- Database: `laravel`
 
 ### Adminer
 - URL: http://localhost:9090
 - Server: `db`
-- Username: `refactorian`
-- Password: `refactorian`
-- Database: `refactorian`
+- Username: `laravel`
+- Password: `laravel`
+- Database: `laravel`
 
 ### Basic docker compose commands
 - Build or rebuild services
