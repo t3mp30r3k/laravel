@@ -48,37 +48,37 @@ services:
     ####################################################################################################
     # phpMyAdmin
     ####################################################################################################
-    # phpmyadmin:
-    #     image: phpmyadmin/phpmyadmin
-    #     ports:
-    #         - 8080:80
-    #     links:
-    #         - db
-    #     environment:
-    #         PMA_HOST: db
-    #         PMA_PORT: 3306
-    #         PMA_ARBITRARY: 1
-    #     volumes:
-    #         - .docker/phpmyadmin/sessions:/sessions
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        ports:
+            - 8080:80
+        links:
+            - db
+        environment:
+            PMA_HOST: db
+            PMA_PORT: 3306
+            PMA_ARBITRARY: 1
+        volumes:
+            - .docker/phpmyadmin/sessions:/sessions
 
     ####################################################################################################
     # Adminer
     ####################################################################################################
-    # adminer:
-    #     image: adminer
-    #     ports:
-    #         - 9090:8080
-    #     depends_on:
-    #     - db
+    adminer:
+        image: adminer
+        ports:
+            - 9090:8080
+        depends_on:
+        - db
 
     ####################################################################################################
     # Mailpit
     ####################################################################################################
-    # mail:
-    #     image: axllent/mailpit:latest
-    #     ports:
-    #     - 8025:8025
-    #     - 1025:1025
+    mail:
+        image: axllent/mailpit:latest
+        ports:
+        - 8025:8025
+        - 1025:1025
 
     ####################################################################################################
     # Redis
